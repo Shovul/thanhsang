@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react"
+import { motion } from "framer-motion";
 
 type Project = {
   src: string
@@ -64,26 +65,32 @@ const Projects = () => {
     <>
         <h2 className="text-3xl font-bold text-center mb-12 divider">Projects</h2>
         <div className="flex flex-col lg:flex-row items-center gap-5 py-10">
-
-            <div className="flex-1 flex flex-col justify-center gap-6 max- text-wrap">
-              {projects.map((project, index) => (
-                <p
-                  key={index}
-                  className={`text-lg transition-all duration-300
-                  ${
-                    index === currentProject
-                      ? "font-bold scale-105"
-                      : "text-base-content/40"
-                  }`}
-                >
-                  {project.desc}
-                </p>
-              ))}
+            <div className="flex-1 h-48 overflow-hidden relative border-l-4 border-primary bg-base-200/50 rounded-r-xl">
+              <motion.div
+                animate={{ y: -(currentProject * 192) }} // 192px matches the container height (h-48)
+                transition={{ type: "spring", stiffness: 100, damping: 20 }}
+                className="flex flex-col"
+              >
+                {projects.map((project, index) => (
+                  <div 
+                    key={index} 
+                    className="h-48 p-8 flex flex-col justify-center transition-opacity duration-500"
+                    style={{ opacity: currentProject === index ? 1 : 0.2 }}
+                  >
+                    <h3 className="text-2xl font-bold text-primary mb-2">
+                      {project.desc.split('\n')[0]}
+                    </h3>
+                    <p className="text-lg leading-relaxed italic">
+                      {project.desc.split('\n')[1]}
+                    </p>
+                  </div>
+                ))}
+              </motion.div>
             </div>
 
-            <div className="carousel lg:carousel-vertical rounded-box w-64 lg:h-96 ml-30" ref={containerRef}>
+            <div className="carousel carousel-vertical rounded-box w-64 h-96 lg:ml-30" ref={containerRef}>
               {projects.map((project, index) => (
-                  <div key={index} className="carousel-item  w-full lg:h-full relative">
+                  <div key={index} className="carousel-item h-full relative">
 
                   <img
                       src={project.src}

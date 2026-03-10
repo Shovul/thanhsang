@@ -40,11 +40,8 @@ const Skills = () => {
             <SiTypescript />
             <SiJavascript />
             <FaNodeJs />
-            <SiGo />
             <SiPostgresql />
-            <SiMongodb />
             <SiGraphql />
-            <SiLaravel />
             <FaGithub />
             </div>
         </div>
@@ -59,7 +56,6 @@ const Skills = () => {
             </p>
 
             <div className="flex flex-wrap gap-4 text-3xl">
-            <SiVuedotjs />
             <SiReact />
             <SiNextdotjs />
             <SiTailwindcss />
@@ -81,9 +77,7 @@ const Skills = () => {
             <FaLinux />
             <SiDocker />
             <SiKubernetes />
-            <SiTerraform />
             <SiVercel />
-            <SiRedis />
             </div>
         </div>
 

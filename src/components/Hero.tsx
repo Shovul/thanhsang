@@ -24,13 +24,13 @@ const Hero = () => {
             <div>
                 <h1 className="text-3xl md:text-5xl font-bold">I'm Thanh Sang, and I'm a</h1>
                 <h1 className="font-bold text-2xl md:text-3xl py-4">
-                        <span className="block text-white">
+                        <span className="block">
                         A student of Saigon University
                         </span>
 
                         <span className="block">
                         <span className="bg-gradient-to-r from-blue-500 to-pink-600 bg-clip-text text-transparent font-extrabold">Software engineer ● Full-stack</span>{" "}
-                        <span className="text-white">developer.</span>{" "}
+                        <span>developer.</span>{" "}
                         </span>
                     </h1>
                 <p className="py-6">

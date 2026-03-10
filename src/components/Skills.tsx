@@ -22,7 +22,7 @@ import { FaNodeJs, FaGithub, FaAws, FaLinux } from "react-icons/fa";
 
 const Skills = () => {
   return (
-    <section className="max-w-6xl mx-auto py-16 px-6">
+    <section className="mx-auto py-16">
         <h2 className="text-3xl font-bold text-center mb-12 divider">Skills</h2>
 
         <div className="grid md:grid-cols-2 gap-8">

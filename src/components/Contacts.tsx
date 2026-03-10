@@ -13,25 +13,25 @@ const Contacts = () => {
         </button>
 
         {/* buttons that show up when FAB is open */}
-        <div className="tooltip" data-tip="Github">
-            <button className="btn btn-lg btn-circle btn-accent">
-                <i className="ci-2x ci-github"></i>
-            </button>
-        </div>
-        <div className="tooltip" data-tip="Linkedin">
-            <button className="btn btn-lg btn-circle btn-accent">
-                <i className="ci ci-linkedin ci-2x"></i>
-            </button>
-        </div>
-        <div className="tooltip" data-tip="Facebook">
-            <button className="btn btn-lg btn-circle btn-accent">
-                <i className="ci ci-facebook ci-2x"></i>
-            </button>
-        </div>
-        <div className="tooltip" data-tip="Gmail">
-            <button className="btn btn-lg btn-circle btn-accent">
+        <div className="tooltip" data-tip="phngthanhsang@gmail.com">
+            <button onClick={() => {navigator.clipboard.writeText("phngthanhsang@gmail.com")}} className="btn btn-lg btn-circle btn-accent">
                 <i className="ci ci-gmail ci-2x"></i>
             </button>
+        </div>
+        <div className="tooltip" data-tip="Github">
+            <a href="https://github.com/Shovul" target="_blank" className="btn btn-lg btn-circle btn-accent">
+                <i className="ci-2x ci-github"></i>
+            </a>
+        </div>
+        <div className="tooltip" data-tip="Linkedin">
+            <a href="https://www.linkedin.com/in/pham-nguyen-thanh-sang-5998a0362/" target="_blank" className="btn btn-lg btn-circle btn-accent">
+                <i className="ci ci-linkedin ci-2x"></i>
+            </a>
+        </div>
+        <div className="tooltip" data-tip="Facebook">
+            <a href="https://www.facebook.com/thatstheSang" target="_blank" className="btn btn-lg btn-circle btn-accent">
+                <i className="ci ci-facebook ci-2x"></i>
+            </a>
         </div>
     </div>
   )

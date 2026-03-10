@@ -1,15 +1,39 @@
+import { useEffect, useState } from "react"
 
 const Navbar = () => {
+  const [theme, setTheme] = useState("light")
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme")
+
+    if (savedTheme) {
+      setTheme(savedTheme)
+      document.documentElement.setAttribute("data-theme", savedTheme)
+    } else {
+      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light"
+      setTheme(systemTheme)
+    }
+  }, [])
+
+  const switchTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light"
+    setTheme(newTheme)
+    document.documentElement.setAttribute("data-theme", newTheme)
+    localStorage.setItem("theme", newTheme)
+  }
+
   return (
     <div className="navbar bg-base-100 shadow-sm px-5">
         <div className="flex-1">
-            <a className="btn btn-ghost text-xl">daisyUI</a>
+            <a className="text-xl">thanhSang</a>
         </div>
         <div className="flex-none">
             <button className="btn btn-square btn-ghost">
                 <label className="swap swap-rotate">
                     {/* this hidden checkbox controls the state */}
-                    <input type="checkbox" className="theme-controller" value="synthwave" />
+                    <input type="checkbox" className="theme-controller" value="synthwave" checked={theme === "light" ? false : true} onChange={switchTheme} />
 
                     {/* sun icon */}
                     <svg

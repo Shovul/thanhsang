@@ -65,7 +65,7 @@ const Projects = () => {
     <>
         <h2 className="text-3xl font-bold text-center mb-12 divider">Projects</h2>
         <div className="flex flex-col lg:flex-row items-center gap-5 py-10">
-            <div className="flex-1 h-48 overflow-hidden relative border-l-4 border-primary bg-base-200/50 rounded-r-xl">
+            <div className="lg:flex-1 h-48 overflow-hidden relative bg-base-200/50 rounded-r-xl">
               <motion.div
                 animate={{ y: -(currentProject * 192) }} // 192px matches the container height (h-48)
                 transition={{ type: "spring", stiffness: 100, damping: 20 }}
@@ -88,7 +88,7 @@ const Projects = () => {
               </motion.div>
             </div>
 
-            <div className="carousel carousel-vertical rounded-box w-64 h-96 lg:ml-30" ref={containerRef}>
+            <div className="carousel carousel-vertical rounded-box w-64 h-96 lg:ml-20" ref={containerRef}>
               {projects.map((project, index) => (
                   <div key={index} className="carousel-item h-full relative">
 

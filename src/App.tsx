@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="px-10 md:px-20 lg:px-50 pb-10 bg-base-200 transition duration-300">
+      <div className="px-10 md:px-20 lg:px-40 pb-10 bg-base-200 transition duration-300">
         <Hero />
 
         <Projects />

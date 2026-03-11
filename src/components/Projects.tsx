@@ -7,32 +7,24 @@ type Project = {
 }
 const projects: Project[] = [
   {
-    src: "https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp",
-    desc: "Project 1\nLorem ipsum ut eum doloremque dolores. Cumque sunt facere eaque asperiores distinctio fugit. Repellat sint ex vel accusamus nostrum!",
-  },
-  {
-    src: "https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp",
-    desc: "Project 2\nLorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae excepturi, eveniet accusantium similique au vel accusamus nostrum!",
-  },
-  {
     src: "https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp",
-    desc: "Project 3\nLorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae excepturi, emque dolores. Cumque sunt facere eaque asperiores distinctio fugit. Repellat sint ex vel accusamus nostrum!",
-  },
-  {
-    src: "https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp",
-    desc: "Project 4\nr adipisicing elit. Repudiandae excepturi, eveniet accusantium similique aut eum doloremque inctio fugit. Repellat sint ex vel accusamus nostrum!",
-  },
-  {
-    src: "https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp",
-    desc: "Project 5\nLorem ipsum dolor sit amet consectetur adipisicing elit. similique aut eum doloremque dolores. Cumque sunt facere eaque asperiores distinctio fugit. Repellat sint ex vel accusamus nostrum!",
+    desc: "Smart School Bus\nLorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae excepturi, emque dolores. Cumque sunt facere eaque asperiores distinctio fugit. Repellat sint ex vel accusamus nostrum!",
   },
   {
     src: "https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.webp",
-    desc: "Project 6\nLorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae excepturi, eveniet. Cumque sunt facere eaque asperiores distinctio fugit. Repellat sint ex vel accusamus nostrum!",
+    desc: "Brick Matcher\nA color matching game with an abilities/build system for users to customize and bosses with more to come!",
+  },
+  {
+    src: "https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp",
+    desc: "Minishop\nr adipisicing elit. Repudiandae excepturi, eveniet accusantium similique aut eum doloremque inctio fugit. Repellat sint ex vel accusamus nostrum!",
+  },
+  {
+    src: "https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp",
+    desc: "Simple restaurant website\nA restaurant app with features for both users and manager. Users can order and pay for items they order; Manager can take in the statistic as well as update delivery.",
   },
   {
     src: "https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp",
-    desc: "Project 7\nLorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae excepturi, eveniet accusantium similique aut eum doloremque dolores.",
+    desc: "Quizigma\nA feature-rich quiz platform to help users learn, create, manage and import quizzes from various sources like Quizzizz, Blooket and Spreadsheets.",
   },
 ]
 

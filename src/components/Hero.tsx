@@ -1,4 +1,5 @@
 import profileImg from "./../assets/profile.jpg"
+import resumePDF from './../assets/Sang_Resume.pdf'; 
 
 const Hero = () => {
   return (
@@ -37,7 +38,7 @@ const Hero = () => {
                 <p className="py-6">
                     This space is for talking about the project I am woring on in my current course, Open source operating system development.
                 </p>
-                <button className="btn btn-primary">Resume</button>
+                <a href={resumePDF} target="_blank" rel="noreferrer" className="btn btn-primary">Resume</a>
             </div>
         </div>
     </div>
